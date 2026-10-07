@@ -1,22 +1,21 @@
-# Báo cáo Day 6: [ĐIỀN tên đề tài ngắn]
+# Báo cáo Day 6: Kiểm tra Calibration LiDAR-Camera bằng Projection và Alignment Score
 
-> Thay **mọi** ô có chữ ĐIỀN nằm trong ngoặc vuông bằng nội dung của bạn, xoá luôn cả dấu ngoặc vuông. Lệnh `python tools/check_submission.py` sẽ báo FAIL nếu còn sót bất kỳ chỗ nào.
-
-- **Họ tên:** [ĐIỀN]
-- **MSSV:** [ĐIỀN] (phải trùng với MSSV trong tên repo `<HoVaTen>-<MSSV>-Track4-Day21`)
-- **Lớp:** [ĐIỀN]
-- **Link repo:** [ĐIỀN]
-- **Topic:** [ĐIỀN một chữ cái A/B/C/D/E/F] — [ĐIỀN tên topic]
-- **Dataset:** [ĐIỀN một hoặc nhiều trong: data/synthetic, data/kitti_mini, data/nuscenes_mini_subset, log riêng]
-- **Các frame đã dùng:** [ĐIỀN danh sách frame id, ví dụ 000011, 000049 hoặc scene-0103_010]
+- **Họ tên:** Nguyễn Thế Khang
+- **MSSV:** 2A202602964
+- **Lớp:** K4-Track4
+- **Link repo:** https://github.com/khangnguyenthe18/K4-Track4-Day06-NguyenTheKhang-2A202602964-3D-From-Point-Clouds
+- **Topic:** A — Kiểm tra calibration LiDAR-camera bằng projection (LiDAR-camera projection QA)
+- **Dataset:** data/synthetic, data/kitti_mini, data/nuscenes_mini_subset
+- **Các frame đã dùng:** KITTI: 000011, 000021, 000049, 000004; nuScenes: scene-0103_010, scene-1094_010; Synthetic: 000000, 000003
 
 > Hãy viết ngắn: mỗi mục từ 3 đến 8 dòng, ưu tiên số liệu và hình ảnh.
 
 ## 1. Claim
 
-Một câu khẳng định kỹ thuật có thể kiểm chứng. Ví dụ: *"Lệch yaw 1° làm 12% điểm LiDAR rơi ra khỏi vật thể ở 30 m, phát hiện được bằng edge-alignment score với ngưỡng X."*
+Một câu khẳng định kỹ thuật có thể kiểm chứng:
 
-[ĐIỀN]
+Độ lệch góc yaw cảm biến LiDAR-camera từ 1.0° trở lên khiến hơn 20% điểm LiDAR thuộc vật thể rơi ra ngoài 2D bounding box ở cự ly > 25 m và làm giảm chỉ số Edge-Alignment Score (EAS) trên 30%, cho phép thiết kế cơ chế tự động phát hiện calibration drift trực tuyến mà không cần nhãn 3D ground-truth.
+
 
 ## 2. Evidence
 
