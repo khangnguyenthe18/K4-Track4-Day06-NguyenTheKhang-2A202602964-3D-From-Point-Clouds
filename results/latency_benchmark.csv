@@ -1,0 +1,3 @@
+hardware,num_points,num_runs,task,latency_p50_ms,latency_p95_ms,latency_mean_ms
+"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD (Windows)",108004,30,Projection_Velo_To_Image,9.964,10.776,9.865
+"AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD (Windows)",1671,30,Edge_Alignment_Score,0.586,0.722,0.616

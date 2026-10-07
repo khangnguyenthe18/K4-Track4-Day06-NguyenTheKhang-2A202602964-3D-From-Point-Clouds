@@ -1,0 +1,5 @@
+dataset_config,frame_id,total_points,points_inside_fov,fov_percentage,depth_edge_points,baseline_eas,mean_edge_dist_px
+KITTI 64-beam (Day),000011,108004,19946,18.5%,1671,0.6600,3.55
+"nuScenes 32-beam (Day, Deskewed)",scene-0103_010,34720,3120,9.0%,130,0.2164,15.32
+"nuScenes 32-beam (Day, No Deskew)",scene-0103_010,34720,2911,8.4%,118,0.2268,14.95
+"nuScenes 32-beam (Night Rain, Deskewed)",scene-1094_010,34688,3592,10.4%,179,0.6028,3.71

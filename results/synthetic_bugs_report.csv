@@ -1,0 +1,8 @@
+bug_type,affected_frame,description,detection_method,impact
+NaN_Inf_Points,000000,Phát hiện 23 điểm NaN và 0 điểm Inf trong file velodyne/000000.bin,np.isnan(points).any(axis=1),Làm gãy phép nhân ma trận nếu không lọc trước khi đưa vào projection pipeline
+NaN_Inf_Points,000001,Phát hiện 23 điểm NaN và 0 điểm Inf trong file velodyne/000001.bin,np.isnan(points).any(axis=1),Làm gãy phép nhân ma trận nếu không lọc trước khi đưa vào projection pipeline
+NaN_Inf_Points,000002,Phát hiện 23 điểm NaN và 0 điểm Inf trong file velodyne/000002.bin,np.isnan(points).any(axis=1),Làm gãy phép nhân ma trận nếu không lọc trước khi đưa vào projection pipeline
+NaN_Inf_Points,000003,Phát hiện 22 điểm NaN và 0 điểm Inf trong file velodyne/000003.bin,np.isnan(points).any(axis=1),Làm gãy phép nhân ma trận nếu không lọc trước khi đưa vào projection pipeline
+NaN_Inf_Points,000004,Phát hiện 23 điểm NaN và 0 điểm Inf trong file velodyne/000004.bin,np.isnan(points).any(axis=1),Làm gãy phép nhân ma trận nếu không lọc trước khi đưa vào projection pipeline
+Timestamp_Jump_Missing_Frame,000002 -> 000003,Thời gian nhảy vọt dt=0.200s (chuẩn là 0.100s). Frame tại t=0.300s bị mất,timestamps[i] - timestamps[i-1] != 0.1s,Làm sai lệch vận tốc ước lượng và thuật toán lọc Kalman / Odometry
+LiDAR_Point_Dropout,000003,"Số điểm tụt từ trung bình 23821 xuống 22063 (mất 1758 điểm, ~7.4%)",len(points) < 0.95 * mean_points,"Giảm mật độ tia quét, dễ bỏ sót vật cản nhỏ hoặc người đi bộ ở xa"
